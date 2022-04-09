@@ -6,7 +6,7 @@ import UnstableBatchedUpdatesUsageF from "./components/UnstableBatchedUpdatesUsa
 
 import ForceUpdateUsage from "./components/ForceUpdateUsage";
 
-//  React基本使用
+//  React常用的api基本使用
 export default function App() {
   return (
     <div className="App">
