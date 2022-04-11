@@ -1,7 +1,7 @@
 import "./styles.css";
 import SetStateBatchUpdate from "./components/01setStateBatchUpdate";
 import HocComponent from "./components/02hoc";
-import ReduxUsage from "./pages";
+import ReduxUsage from "./pages/ReduxUsage";
 
 //  React常用的api基本使用
 export default function App() {
