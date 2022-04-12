@@ -13,9 +13,9 @@ export default function App() {
       {/* React高阶组件使用 */}
       {/* <HocComponent /> */}
       {/* Redux基本使用 */}
-      {/* <ReduxUsage userName={"liusuolong"} /> */}
+      <ReduxUsage userName={"liusuolong"} />
       {/* ReduxToolKit 模式的Redux使用 */}
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }

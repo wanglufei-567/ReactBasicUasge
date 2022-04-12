@@ -1,6 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { user, order } from "./reducers";
+import counterReducer from "../components/counter/counterSlice";
 
 function address(state = { address: "china" }, action) {
   switch (action.type) {
@@ -18,12 +19,13 @@ function address(state = { address: "china" }, action) {
 const reducer = combineReducers({
   user,
   order,
-  address
+  address,
+  counter: counterReducer
 });
 const store = createStore(reducer, applyMiddleware(thunk));
 
 // console.log("store", store);
-// console.log("初始state", store.getState());
+console.log("初始state", store.getState());
 store.dispatch({
   type: "EDIT",
   payload: "beijing"

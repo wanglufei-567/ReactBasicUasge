@@ -9,12 +9,12 @@ import reduxToolModeStore from "./store/reduxToolModeStore";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    {/* <Provider store={store}>
-      <App />
-    </Provider> */}
-    <Provider store={reduxToolModeStore}>
+    <Provider store={store}>
       <App />
     </Provider>
+    {/* <Provider store={reduxToolModeStore}>
+      <App />
+    </Provider> */}
   </StrictMode>,
   rootElement
 );

@@ -7,11 +7,11 @@ export class index extends Component {
       <div>
         <p>{JSON.stringify(this.props)}</p>
         <br />
-        <p>{this.props.user.userName}</p>
+        <p>{this.props.user?.userName}</p>
         <button onClick={this.props.chageUserName}>
           修改store中的user.userName
         </button>
-        <p>{this.props.order.orderName}</p>
+        <p>{this.props.order?.orderName}</p>
         <button onClick={this.props.changeOrderName}>
           修改store中的order.orderName
         </button>
