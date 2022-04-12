@@ -1,7 +1,8 @@
 import "./styles.css";
-import SetStateBatchUpdate from "./components/01setStateBatchUpdate";
-import HocComponent from "./components/02hoc";
-import ReduxUsage from "./pages/ReduxUsage";
+import SetStateBatchUpdate from "./pages/01setStateBatchUpdate";
+import HocComponent from "./pages/02hoc";
+import ReduxUsage from "./pages/03ReduxUsage";
+import Counter from "./components/counter/Counter";
 
 //  React常用的api基本使用
 export default function App() {
@@ -12,7 +13,9 @@ export default function App() {
       {/* React高阶组件使用 */}
       {/* <HocComponent /> */}
       {/* Redux基本使用 */}
-      <ReduxUsage userName={"liusuolong"} />
+      {/* <ReduxUsage userName={"liusuolong"} /> */}
+      {/* ReduxToolKit 模式的Redux使用 */}
+      <Counter />
     </div>
   );
 }
